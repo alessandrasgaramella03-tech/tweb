@@ -39,25 +39,63 @@
             <!-- Menu della navbar -->
             <ul class="navbar-nav my-menu">
 
+                <!-- HOME -->
                 <li class="nav-item">
-                    <a class="nav-link my-link" href="#">Home</a>
+                    <a class="nav-link my-link" href="#" id="homeLink">
+                        Home
+                    </a>
                 </li>
 
+
+                <!-- NOVITA -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link my-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                        Novit&agrave;
-                    <span class="caret"></span></a>
+
+                    <a class="nav-link my-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown">
+
+                        Novità
+
+                    </a>
 
                     <ul class="dropdown-menu my-dropdown">
-                        <li><a class="dropdown-item" href="#">Film</a></li>
-                        <li><a class="dropdown-item" href="#">Serie Tv</a></li>
-                        <li><a class="dropdown-item" href="#">Novit&agrave;</a></li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                Film
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                Serie TV
+                            </a>
+                        </li>
+
                     </ul>
+
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link my-link" href="login.php">Login</a>
-                </li>
+
+                <!-- QUI APPARE SOLO ADMIN -->
+                <div id="adminMenu"></div>
+
+
+                <!-- QUI LOGIN / LOGOUT -->
+                <div id="loginArea">
+
+                    <li class="nav-item">
+                        <a class="nav-link my-link"
+                        href="#"
+                        id="loginLink">
+
+                        Login
+
+                        </a>
+                    </li>
+
+                </div>
 
             </ul>
         </div>
