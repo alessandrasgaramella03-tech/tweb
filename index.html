@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- serve per la resa responsive del sito su mobile -->
+    <title>Benvenuto su CineXpress</title>
+
+    <!-- Fonts di Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-…" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-…" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS personale -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand my-navbar">
+        <div class="container-fluid"> <!-- elemento contenitore della navbar -->
+
+            <!-- Logo -->
+            <img class="gif" src="img/CineXpress.png" alt="logo CineXpress">
+            <a class="navbar-brand logo" href="#">CineXpress</a>
+
+            <!-- Barra di ricerca -->
+            <div class="search me-auto">
+                <input type="text" id="searchInput" placeholder="Cerca...">
+                <button id="searchBtn" class='btn btn-secondary'>
+                    <i class='bi bi-search'></i>
+                </button>
+            </div>
+
+            <!-- Menu della navbar -->
+            <ul class="navbar-nav my-menu">
+
+                <li class="nav-item">
+                    <a class="nav-link my-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link my-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Novit&agrave;
+                    <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu my-dropdown">
+                        <li><a class="dropdown-item" href="#">Film</a></li>
+                        <li><a class="dropdown-item" href="#">Serie Tv</a></li>
+                        <li><a class="dropdown-item" href="#">Novit&agrave;</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link my-link" href="login.php">Login</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Il cinema senza abbonamenti</h1>
+    <p>Acquista i tuoi film e serie tv preferiti</p>
+    
+    <div id="page-content"></div>
+
+    <div id="home-content">
+    
+    <!-- Inizio carosello film -->
+    <h2 class="mt-5">Film</h2>
+
+    <div id="movieCarousel" class="carousel slide" data-bs-ride="false">
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Qui vengono inserite le slide da Js  -->
+        <div class="carousel-inner"></div>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <!-- Inizio carosello serie -->
+    <h2 class="mt-5">Serie TV</h2>
+
+    <div id="serieCarousel" class="carousel slide" data-bs-ride="false">
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#serieCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Qui vengono inserite le slide da Js -->
+        <div class="carousel-inner"></div>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#serieCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+    </div>
+
+    <!-- Collegamenti a javascript -->
+    <script src="app.js"></script>
+    <script src="read_products.js"></script>
+    <script src="read_one_product.js"></script>
+    <script src="search_products.js"></script>
+
+    <script>console.log("html arrivato in fondo");</script>
+
+</body>
+</html>
