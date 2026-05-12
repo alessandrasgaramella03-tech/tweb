@@ -209,3 +209,17 @@ h2 {
     font-size: 1.1rem;
     padding: 12px 30px;
 }
+
+.search-page h2{
+    color:white;
+    text-align:center;
+    font-family:'Montserrat', sans-serif;
+}
+
+.search-page .movie-poster img{
+    transition:0.3s;
+}
+
+.search-page .movie-poster img:hover{
+    transform:scale(1.05);
+}
