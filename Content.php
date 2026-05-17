@@ -80,8 +80,8 @@ class Content {
     // CREATE
     function create() {
         $query = "INSERT INTO {$this->table}
-        (titolo, genere, anno, tipo, prezzo, immagine)
-        VALUES (:titolo, :genere, :anno, :tipo, :prezzo, :immagine)";
+        (titolo, genere, anno, tipo, prezzo, immagine, novita)
+        VALUES (:titolo, :genere, :anno, :tipo, :prezzo, :immagine, 0)";
 
         $stmt = $this->conn->prepare($query);
 
