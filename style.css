@@ -1,16 +1,16 @@
 /*Font resto del sito */
 body {
     background-color: rgb(0, 0, 0);
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 
 h1 {
     color: rgb(249, 231, 100);
-    padding-top: 55px;
+    padding-top: 30px;
     text-align: center;
-    font-size: 400%;
-    font-family: 'Libre Baskerville', serif;
+    font-size: 500%;
+    font-family: 'Outfit', sans-serif;
 }
 
 
@@ -19,32 +19,28 @@ p {
     padding-top: 5px;
     text-align: center;
     font-size: 170%;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 h2 {
     color: white;
     padding-top: 30px;
     text-align: center;
-    font-size: 100%;
+    font-size: 150%;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 /* Navbar personalizzata */
 .my-navbar {
     padding: 10px 30px;
-    margin: 20px;
+    margin: 0 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
 /* Logo */
 .gif {
-    width: 8%;
-}
-.logo {
-    color: white !important;
-    font-size: 1rem;
-    margin-right: 2%;
+    width: 15%;
 }
 
 /* Barra di ricerca */
@@ -142,7 +138,7 @@ h2 {
     background-size: 70%;
 }
 
-/* ===== LOCANDINE CLICCABILI ===== */
+/* Locandine cliccabili */
 .movie-poster,
 .movie-poster img,
 .read-one-product-button,
@@ -150,7 +146,7 @@ h2 {
     cursor: pointer !important;
 }
 
-/* ===== PAGINA DETTAGLIO ===== */
+/* Pagina dettaglio film/serie */
 .product-page {
     color: white;
     padding: 40px 0 80px 0;
@@ -176,15 +172,15 @@ h2 {
 
 /* titolo */
 .product-details .product-title {
-    font-family: 'Libre Baskerville', serif !important;
+    font-family: 'Outfit', sans-serif !important;
     font-size: 3rem !important;
-    color: yellow !important;
+    color: rgb(249, 231, 100);
     text-align: left !important;
     padding: 0 !important;
     margin: 0 0 35px 0 !important;
 }
 
-/* info */
+/* info prodotto */
 .product-details .product-info {
     margin-top: 20px;
 }
@@ -197,10 +193,10 @@ h2 {
     margin-bottom: 18px;
 }
 
-/* bottone */
+/* Bottone acquista */
 .buy-wrapper {
     margin-top: 45px;
-    text-align: center;
+    text-align: left;
 }
 
 .buy-btn {
@@ -222,4 +218,98 @@ h2 {
 
 .search-page .movie-poster img:hover{
     transform:scale(1.05);
+}
+
+ /* Pagina Login */
+.login-wrapper{
+    text-align:center;
+    padding-top:40px;
+}
+
+.login-box{
+    width: 40%;
+    margin:auto;
+    border:5px solid rgb(249, 231, 100);
+    border-radius:15px;
+    padding:30px;
+    background:black;
+}
+
+.login-box h3{
+    color:white;
+    margin-bottom:30px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 120%;;
+}
+
+.login-box label{
+    display:block;
+    text-align:left;
+    color:white;
+    margin-bottom:8px;
+    margin-top:20px;
+    font-size: 100%;
+    font-family:'Montserrat', sans-serif;
+}
+
+.login-box input{
+    width:100%;
+    padding:16px;
+    border-radius:15px;
+    border:2px solid rgb(249, 231, 100);
+    background:rgb(249, 231, 100);
+    font-size: 100%;;
+    margin-bottom:10px;
+}
+
+.login-box button{
+    margin-top:25px;
+    width:160px;
+    padding:14px;
+    border-radius:15px;
+    border:2px solid rgb(249, 231, 100);
+    background:black;
+    color:white;
+    font-size: 120%;;
+    font-family:'Montserrat', sans-serif;
+    transition:0.3s;
+}
+
+.login-box button:hover{
+    background:rgb(249, 231, 100);
+    color:black;
+}
+
+/* Pagina registrazione*/
+.register-link{
+    margin-top:30px;
+    color:white;
+    font-size:130%;
+    font-family:'Montserrat', sans-serif;
+}
+
+.register-link span{
+    color:rgb(249, 231, 100);
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.movie-poster {
+    height: 320px;
+    width: 220px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.movie-poster:hover {
+    transform: scale(1.03);
+}
+
+.novita-title {
+    font-size: 5rem;
+    color: rgb(249, 231, 100);
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 60px;
+    text-align: center;
 }
