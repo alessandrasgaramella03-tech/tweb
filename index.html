@@ -6,7 +6,7 @@
     <title>Benvenuto su CineXpress</title>
 
     <!-- Fonts di Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CDN -->
@@ -26,7 +26,6 @@
 
             <!-- Logo -->
             <img class="gif" src="img/CineXpress.png" alt="logo CineXpress">
-            <a class="navbar-brand logo" href="#">CineXpress</a>
 
             <!-- Barra di ricerca -->
             <div class="search me-auto">
@@ -41,39 +40,20 @@
 
                 <!-- HOME -->
                 <li class="nav-item">
-                    <a class="nav-link my-link" href="#" id="homeLink">
-                        Home
-                    </a>
+                    <a class="nav-link my-link" href="index.html">Home</a>
                 </li>
 
 
                 <!-- NOVITA -->
-                <li class="nav-item dropdown">
-
-                    <a class="nav-link my-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown">
-
+                <li class="nav-item">
+    
+                    <a 
+                        href="#"
+                        id="novitaLink"
+                        class="nav-link text-white"
+                    >
                         Novità
-
                     </a>
-
-                    <ul class="dropdown-menu my-dropdown">
-
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                Film
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                Serie TV
-                            </a>
-                        </li>
-
-                    </ul>
 
                 </li>
 
@@ -100,56 +80,86 @@
             </ul>
         </div>
     </nav>
+    
+    <!--da far inserire ad ariana-->
+    <div id="home-content">
 
     <h1>Il cinema senza abbonamenti</h1>
-    <p>Acquista i tuoi film e serie tv preferiti</p>
-    
-    <div id="page-content"></div>
 
-    <div id="home-content">
-    
-    <!-- Inizio carosello film -->
+    <p>Acquista i tuoi film e serie tv preferiti</p>
+
+     <!--Inizio carosello film -->
     <h2 class="mt-5">Film</h2>
 
     <div id="movieCarousel" class="carousel slide" data-bs-ride="false">
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#movieCarousel"
+                data-bs-slide="prev">
+
             <span class="carousel-control-prev-icon"></span>
+
         </button>
 
-        <!-- Qui vengono inserite le slide da Js  -->
         <div class="carousel-inner"></div>
 
-        <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#movieCarousel"
+                data-bs-slide="next">
+
             <span class="carousel-control-next-icon"></span>
+
         </button>
 
     </div>
 
-    <!-- Inizio carosello serie -->
+    <!--Serie-->
     <h2 class="mt-5">Serie TV</h2>
 
     <div id="serieCarousel" class="carousel slide" data-bs-ride="false">
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#serieCarousel" data-bs-slide="prev">
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#serieCarousel"
+                data-bs-slide="prev">
+
             <span class="carousel-control-prev-icon"></span>
+
         </button>
 
-        <!-- Qui vengono inserite le slide da Js -->
         <div class="carousel-inner"></div>
 
-        <button class="carousel-control-next" type="button" data-bs-target="#serieCarousel" data-bs-slide="next">
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#serieCarousel"
+                data-bs-slide="next">
+
             <span class="carousel-control-next-icon"></span>
+
         </button>
 
     </div>
+
     </div>
 
+    <!-- PAGINE DINAMICHE -->
+    <div id="page-content"></div>
+    
     <!-- Collegamenti a javascript -->
     <script src="app.js"></script>
+    <script src="login.js"></script>
     <script src="read_products.js"></script>
     <script src="read_one_product.js"></script>
+    <script src="acquisto.js"></script>
     <script src="search_products.js"></script>
+    <script src="create_products.js"></script>
+    <script src="delete_products.js"></script>
+    <script src="update_products.js"></script>
+    <script src="register.js"></script>
+    <script src="novita.js"></script>
+
 
     <script>console.log("html arrivato in fondo");</script>
 
